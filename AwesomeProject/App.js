@@ -30,23 +30,12 @@ import {
       return (
         <NativeRouter>
         <View style={styles.container}>
-          <View style={styles.nav}>
-            <Link to="/" underlayColor="#f0f4f7" style={styles.navItem}>
-              <Text>Home</Text>
-            </Link>
-            <Link
-              to="/products"
-              underlayColor="#f0f4f7"
-              style={styles.navItem}
-            >
-              <Text>Products</Text>
-            </Link>
-            
+          <View style={styles.nav}> 
           </View>
         <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/" element={<Products />}></Route>
-          </Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/products" element={<Products />}></Route>
+        </Routes>
         </View>
       </NativeRouter>
       );
