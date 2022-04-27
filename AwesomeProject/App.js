@@ -7,7 +7,7 @@
  */
 
  import React, { Component } from 'react';
- import { NativeRouter, Routes, Route, Link } from "react-router-native";
+import { NativeRouter, Routes, Route, Link } from "react-router-native";
 import Home from "./Home"
 import Products from "./Products";
 
@@ -29,14 +29,12 @@ import {
   
       return (
         <NativeRouter>
-        <View style={styles.container}>
-          <View style={styles.nav}> 
-          </View>
+       
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/products" element={<Products />}></Route>
         </Routes>
-        </View>
+       
       </NativeRouter>
       );
   
